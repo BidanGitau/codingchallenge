@@ -18,7 +18,8 @@
 
 const findDuplicate=(arr)=>{
     let noneDupAdj=[];
-    const arrString=arr.split('');
+    const lowercase=arr.toLowerCase();
+    const arrString=lowercase.split('');
      //     return string
 //       .split('')
 //       .filter(function(item, pos, self) {
@@ -35,5 +36,5 @@ const findDuplicate=(arr)=>{
       } 
       return noneDupAdj.join(""); 
 }
-console.log(findDuplicate('abbaca'))
+console.log(findDuplicate('cKKaaeel'))
 
