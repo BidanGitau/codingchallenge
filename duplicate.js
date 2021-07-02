@@ -14,28 +14,26 @@
 
 
 // console.log(findDuplicate('abbaca'))
-// const findDuplicate=(arr)=>{
-//     let noneDupAdj=[];
-//     const arrString=arr.split('');
-//     for (let i = 0; i < arrString.length; i++) {
-//         if (arrString[i] == noneDupAdj[noneDupAdj-1]) {
-//          noneDupAdj.pop()
-//         }else{
-//           noneDupAdj.push(arrString[i])
-//         }
-//        return noneDupAdj.join("");
-//       } 
-// }
-// console.log(findDuplicate('abbaca'))
 
-function removeDuplicateCharacters(string) {
-    return string
-      .split('')
-      .filter(function(item, pos, self) {
-        return self.indexOf(item) == pos;
-      })
-      .join('');
-  }
-  console.log(removeDuplicateCharacters('abbaca'));
 
- 
+const findDuplicate=(arr)=>{
+    let noneDupAdj=[];
+    const arrString=arr.split('');
+     //     return string
+//       .split('')
+//       .filter(function(item, pos, self) {
+//         return self.indexOf(item) == pos;
+//       })
+//       .join('');
+    for (let i = 0; i < arrString.length; i++) {
+        if (arrString[i] == noneDupAdj[noneDupAdj.length-1]) {
+         noneDupAdj.pop()
+        }else{
+          noneDupAdj.push(arrString[i])
+        }
+      
+      } 
+      return noneDupAdj.join(""); 
+}
+console.log(findDuplicate('abbaca'))
+
